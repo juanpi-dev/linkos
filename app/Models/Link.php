@@ -144,7 +144,7 @@ class Link extends Model
      *
      * @return Link
      */
-    public static function findByName(string $name): Link
+    public static function findByName(string $name)
     {
         // Case-sensitive WHERE
         $link = Link::where('name', $name)->get();
