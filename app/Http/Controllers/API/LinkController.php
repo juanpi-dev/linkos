@@ -164,7 +164,7 @@ class LinkController extends Controller
      * @return Response
      * @throws BindingResolutionException
      */
-    public function go(string $name): Response
+    public function go(string $name)
     {
         $link = Link::findByName($name);
 
